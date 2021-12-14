@@ -1,4 +1,4 @@
-Library to drive a Noritake GU128X64-800B VFD display. Includes an image/animation generator tool written in python. Uitilizes Adafruits GFX library as a graphics framework.
+Library to drive a Noritake GU128X64-800B VFD display. The driver uses a unique method for serial communication, in which the SPI bus is configured in 16 bit mode split between two pins. Data and commands values are sent on one pin, and a mask is then used to toggle the data/command select signal at the appropriate times. This allows the display to be driven entirely by the Teensy's SPI DMA controller. Includes an image/animation generator tool written in python. Uitilizes Adafruits GFX library as a graphics framework.
 
 Running FFT on audio piped in using the Teensy as a usb audio interface.
 
