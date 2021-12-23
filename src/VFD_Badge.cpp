@@ -26,8 +26,7 @@ void setup() {
   display.setLevel(16); // set the display brightness level [0 - 16]
 
   display.clear(); // clear the controller side buffer
-  display
-      .swapBuffer(); // swap the controller side buffer with the display buffer
+  display.swapBuffer(); // swap the controller side buffer with the display buffer
 
   // add the states onto the stack
   fsm.add(&s_loading);   // State 0
